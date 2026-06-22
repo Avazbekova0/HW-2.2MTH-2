@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$Text-color: #ff0000;
+$back-color: #ffd700;
+
+@mixin font ($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+.container{
+    
+    &__title{
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 140%;
+        color: $Text-color;
+    }
+
+    &__text{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 12%;
+        color: $Text-color;
+    }
+
+    &__block{
+        width: 150px;
+        height: 150px;
+        background-color: $back-color;
+        margin: 5px;
+        
+        &--red{
+            background-color: $Text-color
+        }
+    }
+}
